@@ -1,0 +1,37 @@
+// Place your settings in this file to overwrite default and user settings.
+{
+    "files.exclude": {
+        "**/.git": true,
+        "**/.DS_Store": true,
+        // Exclude generated js files
+        "app/**/*.js": {
+            "when": "$(basename).ts"
+        },
+        "api/**/*.js": {
+            "when": "$(basename).ts"
+        },
+        // Exclude sourcemap files
+        "app/**/*.js.map": true,
+        "api/**/*.js.map": true,
+        // Exclude declaration files files
+        "app/**/*.d.ts": true,
+        "api/**/*.d.ts": true
+    },
+    "search.exclude": {
+        "**/node_modules": true,
+        "**/bower_components": true,
+        // Exclude generated js files
+        "app/**/*.js": {
+            "when": "$(basename).ts"
+        },
+        "api/**/*.js": {
+            "when": "$(basename).ts"
+        },
+        // Exclude sourcemap files
+        "app/**/*.js.map": true,
+        "api/**/*.js.map": true,
+        // Exclude declaration files files
+        "app/**/*.d.ts": true,
+        "api/**/*.d.ts": true
+    }
+}
