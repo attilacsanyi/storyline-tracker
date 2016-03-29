@@ -1,6 +1,5 @@
 {
   "name": "storyline-tracker",
-  "private": true,
   "version": "1.0.0",
   "scripts": {
     "tsc": "tsc",
@@ -9,7 +8,7 @@
     "start": "concurrent \"npm run tsc:w\" \"npm run lite\" ",
     "postinstall" : "typings install"
   },
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "a2-in-memory-web-api": "0.1.12",
     "angular2": "2.0.0-beta.12",
