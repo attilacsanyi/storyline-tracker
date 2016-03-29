@@ -1,0 +1,29 @@
+{
+  "name": "storyline-tracker",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "tsc": "tsc",
+    "tsc:w": "tsc -w",
+    "lite": "lite-server",
+    "start": "concurrent \"npm run tsc:w\" \"npm run lite\" ",
+    "postinstall" : "typings install"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "a2-in-memory-web-api": "0.1.12",
+    "angular2": "2.0.0-beta.12",
+    "es6-promise": "3.0.2",
+    "es6-shim": "0.35.0",
+    "reflect-metadata": "0.1.2",
+    "rxjs": "5.0.0-beta.2",
+    "systemjs": "0.19.20",
+    "zone.js": "0.6.6"
+  },
+  "devDependencies": {
+    "concurrently": "2.0.0",
+    "lite-server": "2.1.0",
+    "tslint": "3.3.0",
+    "typescript": "1.8.7"
+  }
+}
