@@ -2,20 +2,20 @@ import { Injectable } from 'angular2/core';
 import { Observable, Subject } from 'rxjs/Rx';
 
 export interface ISpinnerState {
-  show: boolean
+    show: boolean;
 }
 
 @Injectable()
 export class SpinnerService {
-  private _spinnerSubject = new Subject();
+    private _spinnerSubject = new Subject();
 
-  spinnerState = <Observable<ISpinnerState>>this._spinnerSubject;
+    spinnerState = <Observable<ISpinnerState>>this._spinnerSubject;
 
-  show() {
-    this._spinnerSubject.next(<ISpinnerState>{ show: true });
-  }
+    show() {
+        this._spinnerSubject.next(<ISpinnerState>{ show: true });
+    }
 
-  hide() {
-    this._spinnerSubject.next(<ISpinnerState>{ show: false });
-  }
+    hide() {
+        this._spinnerSubject.next(<ISpinnerState>{ show: false });
+    }
 }
